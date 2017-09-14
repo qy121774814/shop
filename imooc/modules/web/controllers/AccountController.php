@@ -133,7 +133,7 @@ class AccountController extends BaseController
         }else{//添加
         	$model_user = new User();
         	$model_user->setSalt();
-        	$model_user->created_time = $data_now;
+        	$model_user->created_time = $date_now;
         }
 
         $model_user->nickname = $nickname;
